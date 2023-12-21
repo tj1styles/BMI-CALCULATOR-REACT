@@ -32,7 +32,7 @@ const HomeScreen = () => {
       const total = (kgWeight / cmHeight / cmHeight) * 10000;
       setMetricTotal(total);
     }
-    console.log(metricTotal);
+  
   }, [cmHeight, kgWeight, metricTotal]);
 
   useEffect(() => {
@@ -50,11 +50,7 @@ const HomeScreen = () => {
     const total = (poundWeight / inchHeight ** 2) * 730;
     setImperialTotal(total);
   }, [inchHeight, poundWeight]);
-  console.log(convertedFeetToInch);
-  console.log(convertedStoneToPound);
-  console.log(inchHeight);
-  console.log(poundWeight);
-  console.log(imperialTotal);
+  
 
   return (
     <>
